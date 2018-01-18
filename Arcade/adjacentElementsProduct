@@ -1,0 +1,10 @@
+function adjacentElementsProduct(inputArray) {
+    var product = -1000;
+    for (var i = 0; i <= inputArray.length; i += 1) {
+        var newProduct = inputArray[i] * inputArray[i + 1];
+        if (newProduct > product) {
+            product = newProduct;
+        }
+     }
+    return product;
+}
